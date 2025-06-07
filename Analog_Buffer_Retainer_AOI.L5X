@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Addon Instruction that hold or retain values while a maintenace signal is active otherwise it act as a passthrough-->
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="30.02" TargetName="Analog_Buffer_Retainer_AOI" TargetType="AddOnInstructionDefinition" TargetRevision="1.0 " TargetLastEdited="2025-06-07T14:12:27.239Z" ContainsContext="true" Owner="User" ExportDate="Sat Jun 07 08:51:35 2025" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="Jofrre_Meter_PLC">
+<DataTypes Use="Context">
+</DataTypes>
+<AddOnInstructionDefinitions Use="Context">
+<AddOnInstructionDefinition Use="Target" Name="Analog_Buffer_Retainer_AOI" Revision="1.0" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2025-06-07T13:14:02.501Z" CreatedBy="WIN10-RW2020\User" EditedDate="2025-06-07T14:12:27.239Z" EditedBy="WIN10-RW2020\User" SoftwareRevision="v30.02"
+>
+<Description>
+<![CDATA[Addon Instruction that hold or retain values while a maintenace signal is active otherwise it act as a passthrough]]>
+</Description>
+<Parameters>
+<Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Input - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Output - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="Inp_RawVal01" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 01]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal02" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 02]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal03" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 03]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal04" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 04]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal05" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 05]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal06" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 06]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal07" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 07]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_RawVal08" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="false" Visible="false" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Raw Value 08]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal01" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 01]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal02" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 02]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal03" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 03]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal04" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 04]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal05" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 05]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal06" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 06]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal07" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 07]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Out_RealVal08" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Output Value 08]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Inp_HoldLast_Val_Req" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[Hold Last Value Request command
+1 = Active]]>
+</Description>
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+</Parameters>
+<LocalTags>
+<LocalTag Name="SEL_01" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_02" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_03" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_04" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_05" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_06" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_07" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="SEL_08" DataType="SELECT" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[[1,0.00000000e+000,0.00000000e+000,0,0.00000000e+000,5.60519386e-045]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="SELECT">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In1" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="In2" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="SelectorIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="0.0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+</LocalTags>
+<Routines>
+<Routine Name="Logic" Type="FBD">
+<FBDContent SheetSize="D - 22 x 34 in" SheetOrientation="Landscape">
+<Sheet Number="1">
+<IRef ID="0" X="340" Y="120" Operand="Inp_HoldLast_Val_Req" HideDesc="false"/>
+<IRef ID="1" X="800" Y="140" Operand="Inp_RawVal01" HideDesc="false"/>
+<IRef ID="2" X="800" Y="320" Operand="Inp_RawVal02" HideDesc="false"/>
+<IRef ID="3" X="800" Y="540" Operand="Inp_RawVal03" HideDesc="false"/>
+<IRef ID="4" X="780" Y="800" Operand="Inp_RawVal04" HideDesc="false"/>
+<IRef ID="5" X="780" Y="1040" Operand="Inp_RawVal05" HideDesc="false"/>
+<IRef ID="6" X="780" Y="1280" Operand="Inp_RawVal06" HideDesc="false"/>
+<IRef ID="7" X="820" Y="1500" Operand="Inp_RawVal07" HideDesc="false"/>
+<IRef ID="8" X="800" Y="1740" Operand="Inp_RawVal08" HideDesc="false"/>
+<ORef ID="9" X="1140" Y="160" Operand="Out_RealVal01" HideDesc="false"/>
+<ORef ID="10" X="1140" Y="360" Operand="Out_RealVal02" HideDesc="false"/>
+<ORef ID="11" X="1140" Y="580" Operand="Out_RealVal03" HideDesc="false"/>
+<ORef ID="12" X="1120" Y="840" Operand="Out_RealVal04" HideDesc="false"/>
+<ORef ID="13" X="1120" Y="1080" Operand="Out_RealVal05" HideDesc="false"/>
+<ORef ID="14" X="1120" Y="1320" Operand="Out_RealVal06" HideDesc="false"/>
+<ORef ID="15" X="1140" Y="1540" Operand="Out_RealVal07" HideDesc="false"/>
+<ORef ID="16" X="1140" Y="1780" Operand="Out_RealVal08" HideDesc="false"/>
+<ICon ID="17" X="760" Y="220" Name="HoldLast_WC"/>
+<ICon ID="18" X="780" Y="900" Name="HoldLast_WC"/>
+<ICon ID="19" X="780" Y="1140" Name="HoldLast_WC"/>
+<ICon ID="20" X="780" Y="1380" Name="HoldLast_WC"/>
+<ICon ID="21" X="800" Y="420" Name="HoldLast_WC"/>
+<ICon ID="22" X="800" Y="640" Name="HoldLast_WC"/>
+<ICon ID="23" X="800" Y="1600" Name="HoldLast_WC"/>
+<ICon ID="24" X="800" Y="1840" Name="HoldLast_WC"/>
+<ICon ID="25" X="800" Y="160" Name="Real_Freezed_WC01"/>
+<ICon ID="26" X="840" Y="360" Name="Real_Freezed_WC02"/>
+<ICon ID="27" X="840" Y="580" Name="Real_Freezed_WC03"/>
+<ICon ID="28" X="820" Y="840" Name="Real_Freezed_WC04"/>
+<ICon ID="29" X="820" Y="1080" Name="Real_Freezed_WC05"/>
+<ICon ID="30" X="820" Y="1320" Name="Real_Freezed_WC06"/>
+<ICon ID="31" X="840" Y="1540" Name="Real_Freezed_WC07"/>
+<ICon ID="32" X="840" Y="1780" Name="Real_Freezed_WC08"/>
+<OCon ID="33" X="430" Y="120" Name="HoldLast_WC"/>
+<OCon ID="34" X="1090" Y="80" Name="Real_Freezed_WC01"/>
+<OCon ID="35" X="1110" Y="280" Name="Real_Freezed_WC02"/>
+<OCon ID="36" X="1110" Y="500" Name="Real_Freezed_WC03"/>
+<OCon ID="37" X="1090" Y="760" Name="Real_Freezed_WC04"/>
+<OCon ID="38" X="1090" Y="1000" Name="Real_Freezed_WC05"/>
+<OCon ID="39" X="1090" Y="1240" Name="Real_Freezed_WC06"/>
+<OCon ID="40" X="1110" Y="1460" Name="Real_Freezed_WC07"/>
+<OCon ID="41" X="1110" Y="1700" Name="Real_Freezed_WC08"/>
+<Block Type="SEL" ID="42" X="920" Y="80" Operand="SEL_01" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="43" X="920" Y="280" Operand="SEL_02" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="44" X="920" Y="500" Operand="SEL_03" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="45" X="900" Y="760" Operand="SEL_04" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="46" X="900" Y="1000" Operand="SEL_05" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="47" X="900" Y="1240" Operand="SEL_06" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="48" X="920" Y="1460" Operand="SEL_07" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Block Type="SEL" ID="49" X="920" Y="1700" Operand="SEL_08" VisiblePins="In1 In2 SelectorIn Out" HideDesc="false"/>
+<Wire FromID="0" ToID="33"/>
+<Wire FromID="1" ToID="42" ToParam="In1"/>
+<Wire FromID="2" ToID="43" ToParam="In1"/>
+<Wire FromID="3" ToID="44" ToParam="In1"/>
+<Wire FromID="4" ToID="45" ToParam="In1"/>
+<Wire FromID="5" ToID="46" ToParam="In1"/>
+<Wire FromID="6" ToID="47" ToParam="In1"/>
+<Wire FromID="7" ToID="48" ToParam="In1"/>
+<Wire FromID="8" ToID="49" ToParam="In1"/>
+<Wire FromID="17" ToID="42" ToParam="SelectorIn"/>
+<Wire FromID="18" ToID="45" ToParam="SelectorIn"/>
+<Wire FromID="19" ToID="46" ToParam="SelectorIn"/>
+<Wire FromID="20" ToID="47" ToParam="SelectorIn"/>
+<Wire FromID="21" ToID="43" ToParam="SelectorIn"/>
+<Wire FromID="22" ToID="44" ToParam="SelectorIn"/>
+<Wire FromID="23" ToID="48" ToParam="SelectorIn"/>
+<Wire FromID="24" ToID="49" ToParam="SelectorIn"/>
+<Wire FromID="25" ToID="42" ToParam="In2"/>
+<Wire FromID="26" ToID="43" ToParam="In2"/>
+<Wire FromID="27" ToID="44" ToParam="In2"/>
+<Wire FromID="28" ToID="45" ToParam="In2"/>
+<Wire FromID="29" ToID="46" ToParam="In2"/>
+<Wire FromID="30" ToID="47" ToParam="In2"/>
+<Wire FromID="31" ToID="48" ToParam="In2"/>
+<Wire FromID="32" ToID="49" ToParam="In2"/>
+<Wire FromID="42" FromParam="Out" ToID="9"/>
+<Wire FromID="43" FromParam="Out" ToID="10"/>
+<Wire FromID="44" FromParam="Out" ToID="11"/>
+<Wire FromID="45" FromParam="Out" ToID="12"/>
+<Wire FromID="46" FromParam="Out" ToID="13"/>
+<Wire FromID="47" FromParam="Out" ToID="14"/>
+<Wire FromID="48" FromParam="Out" ToID="15"/>
+<Wire FromID="49" FromParam="Out" ToID="16"/>
+<FeedbackWire FromID="42" FromParam="Out" ToID="34"/>
+<FeedbackWire FromID="43" FromParam="Out" ToID="35"/>
+<FeedbackWire FromID="44" FromParam="Out" ToID="36"/>
+<FeedbackWire FromID="45" FromParam="Out" ToID="37"/>
+<FeedbackWire FromID="46" FromParam="Out" ToID="38"/>
+<FeedbackWire FromID="47" FromParam="Out" ToID="39"/>
+<FeedbackWire FromID="48" FromParam="Out" ToID="40"/>
+<FeedbackWire FromID="49" FromParam="Out" ToID="41"/>
+<TextBox ID="50" X="40" Y="100" Width="0">
+<Text>
+<![CDATA[Hold or Freeze Outputs
+Command
+1 = Active]]>
+</Text>
+</TextBox>
+</Sheet>
+</FBDContent>
+</Routine>
+</Routines>
+</AddOnInstructionDefinition>
+</AddOnInstructionDefinitions>
+</Controller>
+</RSLogix5000Content>
