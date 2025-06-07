@@ -1,2 +1,5 @@
 # Analog_Buffer_Retainer_AOI
-Rockwell Logix Designer Addon Instruction that hold or retain values while a maintenace signal is active otherwise it act as a passthrough
+Rockwell Studio 5000 Logix Designer Addon Instruction that hold or retain values while a maintenace signal is active otherwise it act as a passthrough
+Can be used in Function Block Routines for a better visual indication
+
+This AOI accept up to 8 analog values like REAL or DINT data type, if the hold the last flag is set, then eight out put values remain unchanged, when the  hold the last flag is clear, the outpts will follow the inputs.
